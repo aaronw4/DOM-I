@@ -82,3 +82,10 @@ mainPara[8].textContent = siteContent['footer']['copyright'];
 
 let middleImg = document.querySelector('#middle-img');
 middleImg.setAttribute('src', siteContent['main-content']['middle-img-src']);
+
+nav.forEach(i => i.style.color = 'green');
+let newTag1 = document.createElement('a');
+newTag1.textContent = "Home";
+nav.appendChild(newTag1);
+
+
