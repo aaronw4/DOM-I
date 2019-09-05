@@ -80,4 +80,5 @@ mainPara[6].textContent = siteContent['contact']['phone'];
 mainPara[7].textContent = siteContent['contact']['email'];
 mainPara[8].textContent = siteContent['footer']['copyright'];
 
-
+let middleImg = document.querySelector('#middle-img');
+middleImg.setAttribute('src', siteContent['main-content']['middle-img-src']);
