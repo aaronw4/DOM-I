@@ -84,8 +84,15 @@ let middleImg = document.querySelector('#middle-img');
 middleImg.setAttribute('src', siteContent['main-content']['middle-img-src']);
 
 nav.forEach(i => i.style.color = 'green');
+
 let newTag1 = document.createElement('a');
 newTag1.textContent = "Home";
-nav.appendChild(newTag1);
+let nav1 = document.querySelector('nav');
+nav1.prepend(newTag1);
+
+let newTag2 = document.createElement('a');
+newTag2.textContent = "End";
+nav1.appendChild(newTag2);
+
 
 
