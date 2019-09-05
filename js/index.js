@@ -48,3 +48,24 @@ nav[2].textContent = siteContent['nav']['nav-item-3'];
 nav[3].textContent = siteContent['nav']['nav-item-4'];
 nav[4].textContent = siteContent['nav']['nav-item-5'];
 nav[5].textContent = siteContent['nav']['nav-item-6'];
+
+let text = document.querySelector('.cta-text');
+let header1 = text.querySelector('h1');
+header1.textContent = siteContent['cta']['h1'];
+header1.style.display = 'flex';
+header1.style.flexWrap = 'wrap';
+
+let button = text.querySelector('button');
+button.textContent = siteContent['cta']['button'];
+
+let ctaImg = document.querySelector('#cta-img');
+ctaImg.setAttribute('src', siteContent['cta']['img-src']);
+
+let mainHeaders = document.querySelectorAll('h4');
+mainHeaders[0].textContent = siteContent['main-content']['features-h4'];
+mainHeaders[1].textContent = siteContent['main-content']['about-h4'];
+mainHeaders[2].textContent = siteContent['main-content']['features-h4'];
+mainHeaders[3].textContent = siteContent['main-content']['services-h4'];
+mainHeaders[4].textContent = siteContent['main-content']['vision-h4'];
+
+
